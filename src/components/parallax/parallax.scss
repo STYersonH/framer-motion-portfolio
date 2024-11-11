@@ -39,15 +39,15 @@
   }
 
   .planets {
-    background-image: url("./planets.png");
+    background-image: url("./../../../public/planets.png");
   }
 
   .stars {
-    background-image: url("./stars.png");
+    background-image: url("./../../../public/stars.png");
   }
 
   .stars.left {
     left: -100vw;
-    background-image: url("./stars.png");
+    background-image: url("./../../../public/stars.png");
   }
 }
