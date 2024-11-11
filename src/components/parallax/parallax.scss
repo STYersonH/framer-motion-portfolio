@@ -30,7 +30,7 @@
   }
 
   .mountains {
-    background-image: url("./mountains.png");
+    background-image: url("./../../../mountains.png");
 
     @include mobile {
       background-size: contain;
