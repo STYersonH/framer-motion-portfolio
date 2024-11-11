@@ -1,0 +1,42 @@
+@import "../../app.scss";
+
+.navbar {
+  height: 100px;
+
+  .wrapper {
+    max-width: var(--max-width);
+    margin: auto; // centrar el contenedor wrapper
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+
+    @include mobile {
+      justify-content: end;
+      margin-right: 20px;
+    }
+  }
+
+  span {
+    font-weight: bold;
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  .social {
+    display: flex;
+    gap: 20px;
+
+    img {
+      width: 30px;
+      height: 30px;
+      transition: all 0.2s;
+    }
+
+    img:hover {
+      scale: 120%;
+    }
+  }
+}

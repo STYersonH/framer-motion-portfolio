@@ -1,0 +1,52 @@
+// GLOBALS
+
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+
+  --bg-color: #040f1a; //#0b2c4d; //#0c0c1d;
+  --bg-gradient-hero: linear-gradient(180deg, #040f1a, #040f1a);
+  --main-text: #04bf8a;
+  --max-width: 1080px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: lightgray;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section {
+  height: 100vh;
+  // scroll-snap-align: center;
+}
+
+//  Mixins to responsiveness
+@mixin mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (max-width: 1440px) {
+    @content;
+  }
+}
