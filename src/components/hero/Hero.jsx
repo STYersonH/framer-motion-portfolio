@@ -3,6 +3,20 @@ import "./hero.scss";
 
 import React from "react";
 
+const imageVariants = {
+  initial: {
+    x: 500,
+    opacity: 0,
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 1,
+    },
+  },
+};
+
 const textVariants = {
   initial: {
     x: -500,
@@ -78,7 +92,13 @@ const Hero = () => {
         Writer Content Creator Influencer
       </motion.div>
       <div className="imageContainer">
-        <img src="/hero.png" alt="" />
+        <motion.img
+          src="/hero.png"
+          alt=""
+          variants={imageVariants}
+          initial="initial"
+          animate="animate"
+        />
       </div>
     </div>
   );
